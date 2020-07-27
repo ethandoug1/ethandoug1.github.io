@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <body>
+ {% for page in site.pages %}
+    <a href={{ page.filename }}>{{ page.title }}</a>
+{% endfor %}
+ 
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
  {{ content }}
